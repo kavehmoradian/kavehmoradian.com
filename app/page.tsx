@@ -42,18 +42,18 @@ export default function BlogPage() {
     }
 
     // Sort posts
-    filtered.sort((a, b) => {
-      if (sortBy === "date") {
-        return new Date(b.date).getTime() - new Date(a.date).getTime()
-      } else if (sortBy === "title") {
-        return a.title.localeCompare(b.title)
-      } else if (sortBy === "views") {
-        const aViews = Number.parseInt(a.views.replace(/\D/g, ""))
-        const bViews = Number.parseInt(b.views.replace(/\D/g, ""))
-        return bViews - aViews
-      }
-      return 0
-    })
+    // filtered.sort((a, b) => {
+    //   if (sortBy === "date") {
+    //     return new Date(b.date).getTime() - new Date(a.date).getTime()
+    //   } else if (sortBy === "title") {
+    //     return a.title.localeCompare(b.title)
+    //   } else if (sortBy === "views") {
+    //     const aViews = Number.parseInt(a.views.replace(/\D/g, ""))
+    //     const bViews = Number.parseInt(b.views.replace(/\D/g, ""))
+    //     return bViews - aViews
+    //   }
+    //   return 0
+    // })
 
     return filtered
   }, [blogPosts, searchQuery, selectedCategory, sortBy])
@@ -77,77 +77,11 @@ export default function BlogPage() {
         </p>
       </section>
 
-      <section className="mb-8">
-        <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
-          {/* Search Bar */}
-          <div className="relative flex-1 max-w-md">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 w-4 h-4" />
-            <Input
-              placeholder="Search posts..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-10 bg-slate-800/50 border-slate-600 text-slate-100 placeholder:text-slate-400 focus:border-orange-500"
-            />
-          </div>
-
-          {/* Sort Dropdown */}
-          <div className="flex items-center gap-2">
-            <span className="text-sm text-slate-400">Sort by:</span>
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              className="bg-slate-800 border border-slate-600 text-slate-100 text-sm rounded px-3 py-2 focus:border-orange-500 focus:outline-none min-w-[120px]"
-            >
-              <option value="date">Latest</option>
-              <option value="title">Title</option>
-              <option value="views">Most Viewed</option>
-            </select>
-          </div>
-
-          {/* Category Filters */}
-          <div className="flex items-center gap-2">
-            <span className="text-sm text-slate-400">Category:</span>
-            <select
-              value={selectedCategory}
-              onChange={(e) => setSelectedCategory(e.target.value)}
-              className="bg-slate-800 border border-slate-600 text-slate-100 text-sm rounded px-3 py-2 focus:border-orange-500 focus:outline-none min-w-[120px]"
-            >
-              {categories.map((category) => (
-                <option key={category} value={category}>
-                  {category}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Clear Filters Button */}
-          {hasActiveFilters && (
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={clearFilters}
-              className="text-slate-400 hover:text-slate-200 hover:bg-slate-800"
-            >
-              Clear Filters
-            </Button>
-          )}
-        </div>
-
-        {/* Results Count */}
-        {hasActiveFilters && (
-          <div className="mt-4 text-sm text-slate-400">
-            {filteredPosts.length === blogPosts.length
-              ? `Showing all ${blogPosts.length} posts`
-              : `Showing ${filteredPosts.length} of ${blogPosts.length} posts`}
-          </div>
-        )}
-      </section>
-
       <section className="mb-12">
         {filteredPosts.length > 0 ? (
           <div className="grid gap-6">
             {filteredPosts.map((post, index) => (
-              <Link key={index} href={`/blog/${post.slug}`}>
+              <a href={post.link} target="_blank" rel="noopener noreferrer" key={index}>
                 <Card className="bg-slate-900/40 border-slate-700/30 backdrop-blur-sm hover:bg-slate-900/60 transition-all duration-300 cursor-pointer">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-3 mb-3">
@@ -163,8 +97,6 @@ export default function BlogPage() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-4 text-sm text-slate-500">
                         <span>{post.readTime}</span>
-                        <span>•</span>
-                        <span>{post.views}</span>
                       </div>
                       <Button
                         variant="ghost"
@@ -176,7 +108,7 @@ export default function BlogPage() {
                     </div>
                   </CardContent>
                 </Card>
-              </Link>
+              </a>
             ))}
           </div>
         ) : (

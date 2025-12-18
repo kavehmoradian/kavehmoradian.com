@@ -121,7 +121,7 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
               onClick={copyEmailToClipboard}
               className="flex items-center gap-2 text-sidebar-primary hover:text-sidebar-primary/80 transition-colors cursor-pointer group"
             >
-              <span className="break-all">kave.moradian@gmail.com</span>
+              <span className="break-all ml-3">kave.moradian@gmail.com</span>
               {emailCopied ? (
                 <Check className="w-3 h-3 text-emerald-500" />
               ) : (
@@ -143,17 +143,17 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
           <div>
             <p className="text-muted-foreground uppercase text-xs mb-1 font-medium">LOCATION</p>
             <div className="flex items-center gap-1 text-sidebar-foreground">
-              <span>Tehran, Iran</span>
+              <span className="ml-3">Tehran, Iran</span>
               <MapPin className="w-3 h-3" />
             </div>
           </div>
-          <div>
+          {/* <div>
             <p className="text-muted-foreground uppercase text-xs mb-1 font-medium">STATUS</p>
             <div className="flex items-center gap-2">
               <Circle className="w-2 h-2 fill-emerald-500 text-emerald-500" />
               <span className="text-sidebar-foreground text-xs">Available for work</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -165,6 +165,7 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
             const isActive = isActiveNavItem(item.href)
 
             return (
+              <div key={item.href}>
               <Link key={item.href} href={item.href} onClick={handleNavClick}>
                 <Button
                   variant={isActive ? "secondary" : "ghost"}
@@ -178,6 +179,7 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
                   {item.label}
                 </Button>
               </Link>
+              </div>
             )
           })}
         </div>

@@ -178,7 +178,7 @@ export default function AboutPage() {
         <h2 className="text-3xl font-bold mb-8 text-slate-100">Work Experience</h2>
 
         <div className="space-y-8">
-          <Card className="bg-slate-900/40 border-slate-700/30 backdrop-blur-sm">
+          <Card className="bg-slate-900/60 border-slate-700/50 backdrop-blur-sm hover:bg-slate-900/80 transition-all duration-300">
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <div>
@@ -196,7 +196,7 @@ export default function AboutPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-slate-900/40 border-slate-700/30 backdrop-blur-sm">
+          <Card className="bg-slate-900/60 border-slate-700/50 backdrop-blur-sm hover:bg-slate-900/80 transition-all duration-300">
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <div>
@@ -214,7 +214,7 @@ export default function AboutPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-slate-900/40 border-slate-700/30 backdrop-blur-sm">
+          <Card className="bg-slate-900/60 border-slate-700/50 backdrop-blur-sm hover:bg-slate-900/80 transition-all duration-300">
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <div>
@@ -232,7 +232,7 @@ export default function AboutPage() {
             </CardContent>
           </Card>
 
-          <Card className="bg-slate-900/40 border-slate-700/30 backdrop-blur-sm">
+          <Card className="bg-slate-900/60 border-slate-700/50 backdrop-blur-sm hover:bg-slate-900/80 transition-all duration-300">
             <CardContent className="p-6">
               <div className="flex justify-between items-start mb-4">
                 <div>
@@ -256,7 +256,7 @@ export default function AboutPage() {
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-8 text-slate-100">Education</h2>
 
-        <Card className="bg-slate-900/40 border-slate-700/30 backdrop-blur-sm">
+        <Card className="bg-slate-900/60 border-slate-700/50 backdrop-blur-sm hover:bg-slate-900/80 transition-all duration-300">
           <CardContent className="p-6">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center">

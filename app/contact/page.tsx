@@ -120,7 +120,7 @@ export default function ContactPage() {
           </Card>
 
           {/* Availability Status */}
-          <Card className="bg-slate-900/40 border-slate-700/30 backdrop-blur-sm">
+          {/* <Card className="bg-slate-900/40 border-slate-700/30 backdrop-blur-sm">
             <CardContent className="p-6">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-3 h-3 bg-emerald-500 rounded-full animate-pulse"></div>
@@ -131,7 +131,7 @@ export default function ContactPage() {
                 implementation, cloud migration, or infrastructure optimization, let's discuss how I can help.
               </p>
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
       </section>
 
