@@ -13,7 +13,6 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mon
 export const metadata: Metadata = {
   title: "Kaveh Moradian - DevOps Engineer",
   description: "DevOps, SRE, and Cloud Engineer specializing in infrastructure automation and monitoring",
-  generator: "v0.app",
 }
 
 export default function RootLayout({

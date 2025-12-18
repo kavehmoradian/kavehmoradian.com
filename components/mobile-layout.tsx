@@ -43,8 +43,8 @@ export function MobileLayout({ children }: MobileLayoutProps) {
             {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
           <div className="text-center">
-            <div className="text-white font-semibold text-lg">{getPageTitle()}</div>
-            <div className="text-slate-300 text-sm">Kaveh Moradian</div>
+            <div className="text-white font-semibold text-lg">Kaveh Moradian</div>
+            {/* <div className="text-slate-300 text-sm">Kaveh Moradian</div> */}
           </div>
           <div className="w-10" /> {/* Spacer for centering */}
         </div>
