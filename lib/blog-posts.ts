@@ -347,7 +347,7 @@ export const blogPosts: BlogPost[] = [
     slug: "docker-lens-debugging-slim-images",
     title: "docker-lens: Practical debugging for slim Docker images",
     link: "https://medium.com/@kave.moradian/docker-lens-practical-debugging-for-slim-docker-images-2eb527f3a3b0",
-    excerpt: "Containers let us ship apps with their runtime and dependencies, but when something breaks inside a tiny production image there’s often no bash, no package manager, and barely any tools. I built docker-lens to solve that gap — a small, focused utility that gives you a reproducible way to peek and troubleshoot inside slim, debug-unfriendly containers without permanently changing the image.",
+    excerpt: "Slim Docker images are great for production, but terrible when something goes wrong. This post explains how containers work, why debugging minimal images is hard, and how docker-lens makes live debugging possible without rebuilding or modifying your containers.",
     content: "",
     category: "DevOps",
     date: "Dec 29, 2025",
