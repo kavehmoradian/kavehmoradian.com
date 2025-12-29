@@ -47,15 +47,15 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4">
+                {/* <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-violet-500 to-purple-500 rounded-lg flex items-center justify-center">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-slate-100">Phone</h3>
-                    <p className="text-slate-400">+98-902-123-2701</p>
+                    <p className="text-slate-400"></p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
@@ -101,7 +101,7 @@ export default function ContactPage() {
                   className="border-slate-600 text-slate-400 hover:text-slate-200 hover:border-slate-500 hover:bg-slate-800/50 bg-transparent"
                   asChild
                 >
-                  <Link href="https://youtube.com/@kavehmoradian" target="_blank" rel="noopener noreferrer">
+                  {/* <Link href="" target="_blank" rel="noopener noreferrer">
                     <Youtube className="w-5 h-5" />
                   </Link>
                 </Button>
@@ -110,7 +110,7 @@ export default function ContactPage() {
                   size="lg"
                   className="border-slate-600 text-slate-400 hover:text-slate-200 hover:border-slate-500 hover:bg-slate-800/50 bg-transparent"
                   asChild
-                >
+                > */}
                   <Link href="https://t.me/kavehmoradian" target="_blank" rel="noopener noreferrer">
                     <Send className="w-5 h-5" />
                   </Link>

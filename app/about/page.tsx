@@ -22,9 +22,8 @@ export default function AboutPage() {
           </p>
           <p>
             My expertise includes managing Kubernetes clusters, implementing infrastructure security with tools like
-            Vault and Teleport, and optimizing system performance in both cloud and bare-metal environments. With a
-            Bachelor's degree in Computer Engineering from Kharazmi University, I am committed to continuous learning
-            and professional growth.
+            Vault and Teleport, and optimizing system performance in both cloud and bare-metal environments. 
+            I am committed to continuous learning and professional growth.
           </p>
         </div>
       </section>
@@ -267,7 +266,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-lg font-semibold text-slate-100">Bachelor of Computer Engineering</h3>
                 <p className="text-orange-400">Kharazmi University, Tehran</p>
-                <p className="text-slate-400 text-sm">2021</p>
+                <p className="text-slate-400 text-sm">2021 - 2025</p>
               </div>
             </div>
           </CardContent>
