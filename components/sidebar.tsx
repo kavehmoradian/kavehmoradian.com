@@ -6,7 +6,7 @@ import {
   Github,
   Instagram,
   Linkedin,
-  ExternalLink,
+  Youtube,
   User,
   BookOpen,
   Mail,
@@ -88,13 +88,13 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
           >
             <Mail className="w-4 h-4" />
           </Button>
-          <Button
+          {/* <Button
             size="sm"
             variant="ghost"
             className="p-2 hover:bg-sidebar-accent text-muted-foreground hover:text-sidebar-foreground"
           >
             <Instagram className="w-4 h-4" />
-          </Button>
+          </Button> */}
           <Link href="https://www.linkedin.com/in/kaveh-moradian/" target="_blank" rel="noopener noreferrer">
             <Button
               size="sm"
@@ -104,13 +104,13 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
               <Linkedin className="w-4 h-4" />
             </Button>
           </Link>
-          <Button
+          {/* <Button
             size="sm"
             variant="ghost"
             className="p-2 hover:bg-sidebar-accent text-muted-foreground hover:text-sidebar-foreground"
           >
-            <ExternalLink className="w-4 h-4" />
-          </Button>
+            <Youtube className="w-4 h-4" />
+          </Button> */}
         </div>
 
         {/* Contact Info */}
@@ -134,7 +134,7 @@ export function Sidebar({ onMobileClose }: SidebarProps) {
           </div>
           <div>
             <p className="text-muted-foreground uppercase text-xs mb-1 font-medium">CV</p>
-            <Link href="/Kaveh_Moradian_CV.pdf" download="Kaveh_Moradian_CV.pdf" target="_blank">
+            <Link href="/Kaveh-Moradian.pdf" download="Kaveh-Moradian.pdf" target="_blank">
               <Button variant="link" className="p-0 h-auto text-sidebar-primary text-sm hover:text-sidebar-primary/80">
                 Download <Download className="w-3 h-3 ml-1" />
               </Button>
