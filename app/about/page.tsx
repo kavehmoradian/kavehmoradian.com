@@ -11,19 +11,11 @@ export default function AboutPage() {
 
         <div className="space-y-6 text-slate-300 leading-relaxed text-lg">
           <p>
-            A dedicated DevOps engineer with 3 years of experience, specializing in automation, monitoring, Linux, and
-            containerization. Skilled in designing and deploying CI/CD pipelines, leveraging tools like Docker,
-            Kubernetes, and Ansible to streamline infrastructure and application delivery.
+            I’m a DevOps Engineer with 3+ years of hands-on experience building and running production infrastructure across cloud and bare-metal environments. I focus on automation, observability, and reliability, helping teams keep their systems stable, scalable, and easy to operate.
           </p>
           <p>
-            Experience in proactive monitoring with Prometheus and Grafana, ensuring high availability and reliability
-            of services. Known for solving complex operational challenges and driving continuous improvement in system
-            performance.
-          </p>
-          <p>
-            My expertise includes managing Kubernetes clusters, implementing infrastructure security with tools like
-            Vault and Teleport, and optimizing system performance in both cloud and bare-metal environments. 
-            I am committed to continuous learning and professional growth.
+            I’ve worked with scale-ups and enterprise teams, supporting mission-critical platforms and collaborating with distributed teams. I enjoy digging into complex infrastructure problems, automating away repetitive work, and continuously improving how systems perform and scale as products grow.
+
           </p>
         </div>
       </section>
@@ -105,9 +97,9 @@ export default function AboutPage() {
 
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-slate-200">Cloud & Virtualization</h3>
+            <h3 className="text-xl font-semibold mb-4 text-slate-200">Cloud & Infrastructure</h3>
             <div className="flex flex-wrap gap-2">
-              {["AWS", "ESXi"].map((skill) => (
+              {["AWS", "ESXi", "Proxmox"].map((skill) => (
                 <Badge key={skill} variant="outline" className="border-slate-600 text-slate-400 px-3 py-1">
                   {skill}
                 </Badge>
@@ -116,29 +108,7 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-slate-200">Monitoring & Observability</h3>
-            <div className="flex flex-wrap gap-2">
-              {["Grafana", "Prometheus", "Loki", "Tempo", "Mimir"].map((skill) => (
-                <Badge key={skill} variant="outline" className="border-slate-600 text-slate-400 px-3 py-1">
-                  {skill}
-                </Badge>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold mb-4 text-slate-200">Automation & Configuration</h3>
-            <div className="flex flex-wrap gap-2">
-              {["Ansible", "Linux Shell", "Helm", "ArgoCD", "Terraform"].map((skill) => (
-                <Badge key={skill} variant="outline" className="border-slate-600 text-slate-400 px-3 py-1">
-                  {skill}
-                </Badge>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold mb-4 text-slate-200">Containerization & Orchestration</h3>
+            <h3 className="text-xl font-semibold mb-4 text-slate-200">Containers & Orchestration</h3>
             <div className="flex flex-wrap gap-2">
               {["Docker", "Kubernetes", "Docker Swarm", "CRI-O", "CapRover", "Portainer"].map((skill) => (
                 <Badge key={skill} variant="outline" className="border-slate-600 text-slate-400 px-3 py-1">
@@ -149,9 +119,9 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-slate-200">CI/CD & Security</h3>
+            <h3 className="text-xl font-semibold mb-4 text-slate-200">Observability & Monitoring</h3>
             <div className="flex flex-wrap gap-2">
-              {["GitHub Actions", "GitLab CI", "Nexus", "Vault", "Teleport", "OpenVPN"].map((skill) => (
+              {["Grafana", "Prometheus", "ELK", "Zabbix", "Loki", "Sentry", "Mimir"].map((skill) => (
                 <Badge key={skill} variant="outline" className="border-slate-600 text-slate-400 px-3 py-1">
                   {skill}
                 </Badge>
@@ -160,9 +130,64 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold mb-4 text-slate-200">Databases & Programming</h3>
+            <h3 className="text-xl font-semibold mb-4 text-slate-200">Automation & IaC</h3>
             <div className="flex flex-wrap gap-2">
-              {["MariaDB", "MongoDB", "PostgreSQL", "Bash", "Python", "Node.js"].map((skill) => (
+              {["Ansible", "Terraform", "Bash", "ArgoCD", "Helm"].map((skill) => (
+                <Badge key={skill} variant="outline" className="border-slate-600 text-slate-400 px-3 py-1">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-slate-200">CI/CD</h3>
+            <div className="flex flex-wrap gap-2">
+              {["GitHub Actions", "GitLab CI", "Nexus"].map((skill) => (
+                <Badge key={skill} variant="outline" className="border-slate-600 text-slate-400 px-3 py-1">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-slate-200">Security</h3>
+            <div className="flex flex-wrap gap-2">
+              {["Vault", "Teleport", "Iptables", "Safeline WAF", "Fail2Ban", "Lynis"].map((skill) => (
+                <Badge key={skill} variant="outline" className="border-slate-600 text-slate-400 px-3 py-1">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-slate-200">Networking & Edge</h3>
+            <div className="flex flex-wrap gap-2">
+              {["Traefik", "NGINX", "HAProxy", "Keepalived"].map((skill) => (
+                <Badge key={skill} variant="outline" className="border-slate-600 text-slate-400 px-3 py-1">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-slate-200">Databases & Messaging</h3>
+            <div className="flex flex-wrap gap-2">
+              {["PostgreSQL", "MariaDB", "MongoDB", "Redis", "RabbitMQ"].map((skill) => (
+                <Badge key={skill} variant="outline" className="border-slate-600 text-slate-400 px-3 py-1">
+                  {skill}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-4 text-slate-200">Scripting & Programming</h3>
+            <div className="flex flex-wrap gap-2">
+              {["Bash", "Python", "Node.js"].map((skill) => (
                 <Badge key={skill} variant="outline" className="border-slate-600 text-slate-400 px-3 py-1">
                   {skill}
                 </Badge>
@@ -187,10 +212,11 @@ export default function AboutPage() {
                 <span className="text-slate-400 text-sm">Feb 2025 – Present</span>
               </div>
               <ul className="text-slate-300 space-y-2 text-sm">
-                <li>• Leading DevOps initiatives for city development and innovation projects</li>
-                <li>• Implementing scalable infrastructure solutions for municipal services</li>
-                <li>• Developing automation frameworks for smart city applications</li>
-                <li>• Ensuring high availability and security for critical city systems</li>
+                <li>• Automated and standardized operations across 130+ production servers</li>
+                <li>• Built CI/CD automation for 40+ projects to streamline deployments</li>
+                <li>• Implemented enterprise monitoring using Prometheus, Grafana, Zabbix, and ELK</li>
+                <li>• Maintained 99.9%+ uptime for mission-critical banking systems</li>
+                <li>• Improved incident response through centralized metrics and logging</li>
               </ul>
             </CardContent>
           </Card>
@@ -202,31 +228,14 @@ export default function AboutPage() {
                   <h3 className="text-xl font-semibold text-slate-100">DevOps Engineer</h3>
                   <p className="text-orange-400 font-medium">PerfettoGruppo, Rende, Italy</p>
                 </div>
-                <span className="text-slate-400 text-sm">March 2023 – Present</span>
+                <span className="text-slate-400 text-sm">March 2023 – September 2025</span>
               </div>
               <ul className="text-slate-300 space-y-2 text-sm">
-                <li>• Designed and implemented automated CI/CD pipelines using GitHub Actions</li>
-                <li>• Developed and managed automated backup solutions for critical systems</li>
-                <li>• Implemented robust monitoring solutions for infrastructure and applications</li>
-                <li>• Managed MongoDB and MySQL database clusters ensuring high availability</li>
-              </ul>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-slate-900/60 border-slate-700/50 backdrop-blur-sm hover:bg-slate-900/80 transition-all duration-300">
-            <CardContent className="p-6">
-              <div className="flex justify-between items-start mb-4">
-                <div>
-                  <h3 className="text-xl font-semibold text-slate-100">DevOps Engineer</h3>
-                  <p className="text-orange-400 font-medium">AllBrains Clinic, Vancouver, Canada</p>
-                </div>
-                <span className="text-slate-400 text-sm">August 2023 – January 2025</span>
-              </div>
-              <ul className="text-slate-300 space-y-2 text-sm">
-                <li>• Designed scalable, secure infrastructure on AWS using Terraform and Ansible</li>
-                <li>• Managed Kubernetes clusters with ArgoCD for continuous delivery</li>
-                <li>• Implemented secure access with OpenVPN and Vault for secrets management</li>
-                <li>• Deployed monitoring solutions using Prometheus and Grafana</li>
+                <li>• Built and maintained CI/CD pipelines using GitHub Actions</li>
+                <li>• Provisioned AWS infrastructure using Terraform and Ansible</li>
+                <li>• Operated Kubernetes clusters with GitOps deployments via ArgoCD</li>
+                <li>• Implemented monitoring and dashboards with Prometheus and Grafana</li>
+                <li>• Managed database clusters ensuring availability and data safety</li>
               </ul>
             </CardContent>
           </Card>
@@ -241,10 +250,10 @@ export default function AboutPage() {
                 <span className="text-slate-400 text-sm">October 2024 – December 2024</span>
               </div>
               <ul className="text-slate-300 space-y-2 text-sm">
-                <li>• Created and managed Kubernetes clusters on bare-metal servers</li>
-                <li>• Built CI/CD pipelines using GitLab CI for automated deployments</li>
-                <li>• Secured infrastructure with Safeline WAF and Teleport access management</li>
-                <li>• Optimized system performance in bare-metal environments</li>
+                <li>• Deployed and managed Kubernetes clusters on bare-metal servers</li>
+                <li>• Automated deployments using GitLab CI pipelines</li>
+                <li>• Secured infrastructure with Safeline WAF and Teleport</li>
+                <li>• Optimized performance and availability in production environments</li>
               </ul>
             </CardContent>
           </Card>
